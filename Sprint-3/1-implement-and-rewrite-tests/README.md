@@ -5,14 +5,14 @@ to choose test values that thoroughly test a function.
 
 ## 1 Implement solutions
 
-In the `implement` directory you've got a number of functions you'll need to implement.
+
+Here is a recommended order:
+
+1. `1-get-angle-type.js`In the `implement` directory you've got a number of functions you'll need to implement.
 For each function, you also have a number of different cases you'll need to check for your function.
 
 Write your assertions and build up your program case by case. Don't rush to a solution. The point of these assignments is to learn how to write assertions and build up a program step by step.
 
-Here is a recommended order:
-
-1. `1-get-angle-type.js`
 2. `2-is-proper-fraction.js`
 3. `3-get-card-value.js`
 

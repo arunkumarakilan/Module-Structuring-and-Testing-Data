@@ -7,5 +7,6 @@ export function sayHello(greeting, name) {
 return `${greeting}, ${name}!`;
 
 }
-console.log(sayHello("hello", "Aman"))
+console.log(sayHello("hello", "Aman"));
 console.log(sayHello("hello", "Arun"));
+console.log(sayHello("hello", "Harini"));
