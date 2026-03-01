@@ -1,5 +1,6 @@
 {
   "name": "module-structuring-and-testing-data",
+  "type": "module",
   "version": "1.0.0",
   "description": "Like learning a musical instrument, programming requires daily practice.",
   "main": "index.js",
