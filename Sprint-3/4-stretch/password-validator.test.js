@@ -17,10 +17,33 @@ You must breakdown this problem in order to solve it. Find one test case first a
 const isValidPassword = require("./password-validator");
 test("password has at least 5 characters", () => {
     // Arrange
-    const password = "12345";
-    // Act
-    const result = isValidPassword(password);
-    // Assert
-    expect(result).toEqual(true);
+    const password = "Ha!1";
+   expect( ()=> isValidPassword(password)).toThrow();
 }
 );
+test("password has at least one uppercase letter(A-Z)",()=>{
+const password = "harju!1621";
+    
+    
+    expect(()=> isValidPassword(password)).toThrow();
+});
+test("password has at least one lowercase letter (a-z)", ()=>{
+    const password = "HARJU!1621";
+    expect(()=> isValidPassword(password)).toThrow();
+});
+test("password has at least one number (0-9)", ()=>{
+    const password = "Harju!";
+    expect(()=>isValidPassword(password)).toThrow();
+});
+test("password has  at least one special character ",()=>{
+    const password = "Harju1621";
+    expect(()=> isValidPassword(password)).toThrow();
+});
+test("password not match with previous password", ()=>{
+    const password = "Arun!1621";
+    expect(()=> isValidPassword(password)).toThrow();
+});
+test("password meet all the condition", ()=>{
+    const password ="Harju!1621";
+    expect(isValidPassword(password)).toEqual(true);
+});
