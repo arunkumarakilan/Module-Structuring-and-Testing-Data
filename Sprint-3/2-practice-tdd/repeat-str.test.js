@@ -12,8 +12,23 @@ const repeatStr = require("./repeat-str");
 test("should repeat the string count times", () => {
   const str = "hello";
   const count = 3;
-  const repeatedStr = repeatStr(str, count);
-  expect(repeatedStr).toEqual("hellohellohello");
+  expect(repeatStr(str,count)).toEqual("hellohellohello");
+});
+test(" should return original 'str' without repetition", ()=>{
+  const str = "hello";
+  const count = 1;
+  expect(repeatStr(str, count)).toEqual("hello");
+});
+test("should return empty string", ()=>{
+  const str = "hello";
+  const count = 0;
+  expect(repeatStr(str, count)).toEqual("");
+
+});
+test("should throw negative counts are not valid Error", ()=>{
+const str = "hello";
+  const count = -1;
+  expect(()=> repeatStr(str, count)).toThrow();
 });
 
 // Case: handle count of 1:
