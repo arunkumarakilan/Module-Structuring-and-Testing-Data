@@ -52,7 +52,7 @@ else {
 // The line below allows us to load the getCardValue function into tests in other files.
 // This will be useful in the "rewrite tests with jest" step.
 //module.exports = getCardValue;
-export default getCardValue;
+module.exports = getCardValue;
 // Helper functions to make our assertions easier to read.
 function assertEquals(actualOutput, targetOutput) {
   console.assert(
